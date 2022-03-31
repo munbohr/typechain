@@ -14,3 +14,7 @@ gender: string;
 //variable? === you don't get argument that you will use function
 /////////////////
 /_const sayHi: (name: string, age:number, gender:string) => string _/
+///////////////
+class가 필요하지 않을 때가 있다, 내가 JS를 사용하게 되면 interface
+ts 측면에서 좀 더 안전하다. 오 웬진 모르겠는데 JS상에서 public이 보이지 않는다!
+private는 밖에서 접근할 수 없는 속성이다. 즉 호출 안됨.. 싱기방기
