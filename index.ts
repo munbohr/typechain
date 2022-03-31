@@ -4,10 +4,11 @@ const nickname = "woojin",
     gender = "male";    
 
     
-    const  sayHi = (nickname: string, age: number,  gender: string) => { 
-        console.log(`Hello ${nickname}, you are ${age}, you are a ${gender}`);
-    }
+    const  sayHi = (nickname: string, age: number,  gender: string): string =>  { 
+        return `Hello ${nickname}, you are ${age}, you are a ${gender}`;
+    };
 //variable? === you don't get argument that you will use function
-sayHi(nickname, age, gender);
+/*const sayHi: (name:  string, age:number, gender:string) => string */
+console.log(sayHi(nickname, age, gender));
 
 export {};
