@@ -39,3 +39,7 @@ console.log(sayHi(bohr));
 ^- 값은 bohr에서 함수는 function에서 가져온다.
 //////////////
 많은 function & type이 있을 때엔 typescript를 사용한다.
+//////////////
+block을 생성해야지 호출 할 수 있다.
+////////////////
+method는 내가 블록을 생성했을 때만 사용가능하다.

@@ -7,13 +7,14 @@
     "author": "munbohr <tlstn2997kr@naver.com>",
     "license": "MIT",
     "scripts": {
-        "start": "npx tsc-watch --onSuccess \" node dist/index.js\" " ,
+        "start": "npx tsc-watch --onSuccess \" node dist/index.js\" ",
         "prestart": "tsc"
     },
     "devDependencies": {
         "typescript": "^4.6.3"
     },
     "dependencies": {
+        "crypto-js": "^4.1.1",
         "tsc-watch": "^4.6.2"
     }
 }
