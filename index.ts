@@ -1,23 +1,28 @@
-//console.log("Hello world");
-class Human {
-    public nickname: string;
-    public age: number; 
-    public gender: string;
-    constructor(nickname: string, age: number, gender: string) {//classr가 호출될 때마다 실행됨
-        this.nickname = nickname; 
-        this.age = age; 
-        this.gender = gender;
-    }
+class Block {
+    public index:number;
+    public hash:string;
+    public previousHash:string;
+    public data:string;
+    public timestamp:number;
+    constructor(index:number,
+        hash:string,
+        previousHash:string,
+        data:string,
+        timestamp:number) {
+            this.index = index;
+            this.hash = hash;
+            this.previousHash = previousHash;
+            this.data = data;
+            this.timestamp = timestamp;
+        }
 }
 
-const bohr = new Human("bohr", 19, "male");
+const genesisBlock: Block= new Block(0, "addad", "", "Hello", 12345)
+ 
+let blockchain: [Block] = [genesisBlock];
 
+blockchain.push("stuff");
 
-    
-    const  sayHi = (person: Human) : string =>  { 
-        return `Hello ${person.nickname}, you are ${person.age}, you are a ${person.gender}!`;
-    };
-
-console.log(sayHi(bohr));
+console.log(blockchain);
 
 export {};
